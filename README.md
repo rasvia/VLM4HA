@@ -1,5 +1,5 @@
-# Vision-Language Model for Hardware Assurance
+## Vision-Language Model for Hardware Assurance
 
-## Python dependencies
+### Python dependencies
 
-## Code Execution
+### Code Execution
