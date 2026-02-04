@@ -1,2 +1,2 @@
-# VLM4HA
-Vision-Language Model for Hardware Assurance
+# Vision-Language Model for Hardware Assurance
+
