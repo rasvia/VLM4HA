@@ -5,6 +5,8 @@ This the original code for using VLM for hardware assurance purpose. The figure 
 ### Python dependencies
 The required python dependencies can be found at `docs/requirements.txt`, all required dependencies can be installed via the requirement file.
 
+### Dataset and Trained Model Download
+
 ### Code Execution
 #### Pre-training Language Model
 Use command `python main_BERT.py` to start training model: the default dataset is Nangate-45nm.
