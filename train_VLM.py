@@ -47,7 +47,7 @@ class trainer_VLM:
             self.dataset = CellEncodingDataset(self.config, 'test', transform=ToTensor())
             self.gt = CellEncodingDataset(self.config, 'gt', transform=ToTensor())
 
-        self.arcface_head = ArcFaceLoss(in_feature=1024, out_feature=self.config['num_classes'], scale=self.scale, margin=self.margin).to(self.device)
+        self.arcface_head = ArcFaceLoss(in_feature=512, out_feature=self.config['num_classes'], scale=self.scale, margin=self.margin).to(self.device)
         self.arcface_head.train()
 
     def split_dataset(self):
