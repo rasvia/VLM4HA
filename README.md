@@ -13,7 +13,7 @@ The augmented dataset for `Nangate-45nm` and `SAED-32nm` node technology, and th
 Use command `python main_BERT.py` to start training model: the default dataset is Nangate-45nm.
 
 To customize the parameters, provide them as command line arguments, for example:
-`python /blue/woodard/zhum/vlm/main_BERT.py --library 'SAED' --node_technology 32 --num_classes 286 --batch_size 32 --lr 1e-5 --max_length 105 --vocab_size 245 --max_width 1950`
+`python main_BERT.py --library 'SAED' --node_technology 32 --num_classes 286 --batch_size 32 --lr 1e-5 --max_length 105 --vocab_size 245 --max_width 1950`
 
 **Note**: `num_classes`, `max_length`, `max_width`, and `vocab_size` vary as the node technology changes. 
 
@@ -21,7 +21,7 @@ To customize the parameters, provide them as command line arguments, for example
 Use command `python main_CNN.py` to start training model: the default dataset is Nangate-45nm.
 
 To customize the parameters, provide them as command line arguments, for example:
-`python /blue/woodard/zhum/vlm/main_CNN.py   --library 'SAED' --node_technology 32 --num_classes 286 --batch_size 32 --num_channels 4 --lr 1e-5 --max_length 105 --vocab_size 245 --max_width 1950`
+`python main_CNN.py   --library 'SAED' --node_technology 32 --num_classes 286 --batch_size 32 --num_channels 4 --lr 1e-5 --max_length 105 --vocab_size 245 --max_width 1950`
 
 **Note**: `num_classes`, `max_length`, `max_width`, and `vocab_size` vary as the node technology changes. 
 
@@ -29,7 +29,7 @@ To customize the parameters, provide them as command line arguments, for example
 Use command `python main.py --BERT_weight 'BERT_WEIGHT.pt' --CNN_weight 'CNN_WEIGHT.pt'` to start training model: the default dataset is Nangate-45nm.
 
 To customize the parameters, provide them as command line arguments, for example:
-`python /blue/woodard/zhum/vlm/main.py 	--library 'SAED' --node_technology 32 --num_classes 286 --batch_size 32 --lr 1e-5 --es_delta 0.001 --margin 0.6 --scale 64 --max_length 105 --vocab_size 245 --max_width 1950 --BERT_weight 'BERT_WEIGHT.pt' --CNN_weight 'CNN_WEIGHT.pt'`
+`python main.py 	--library 'SAED' --node_technology 32 --num_classes 286 --batch_size 32 --lr 1e-5 --es_delta 0.001 --margin 0.6 --scale 64 --max_length 105 --vocab_size 245 --max_width 1950 --BERT_weight 'BERT_WEIGHT.pt' --CNN_weight 'CNN_WEIGHT.pt'`
 
 **Note**: `num_classes`, `max_length`, `max_width`, and `vocab_size` vary as the node technology changes. 
 
